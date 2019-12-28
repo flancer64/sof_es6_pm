@@ -2,6 +2,7 @@
 
 Code samples for Stackoverflow question about process managers for ES6 modules.
 
+
 # Build app
 ```
 $ npm install
@@ -49,6 +50,9 @@ Hello World! ES6 module is here.
 ```
 
 ## Start app using process manager `pm2`
+
+There are `--experimental-modules` related issues in [pm2](https://github.com/Unitech/pm2/issues?utf8=%E2%9C%93&q=is%3Aissue+experimental-modules+).
+
 ```
 $ pm2 start ./src/app_es6.mjs --node-args="--experimental-modules"
 [PM2] Starting /home/alex/work/sof_es6_pm/src/app_es6.mjs in fork_mode (1 instance)
