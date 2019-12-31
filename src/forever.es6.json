@@ -1,0 +1,10 @@
+{
+  "uid": "app_es6",
+  "max": 5,
+  "spinSleepTime": 1000,
+  "minUptime": 1000,
+  "append": true,
+  "watch": false,
+  "script": "src/app_es6.mjs",
+  "command": "node --experimental-modules"
+}

@@ -1,5 +1,5 @@
 import express from "express";
-import mod from "./mod/es6";
+import mod from "./mod/es6.mjs";
 
 const app = express();
 const msg = "Hello World! " + mod.getName();
