@@ -1,0 +1,13 @@
+[Unit]
+Description=Simple web server with ES6 modules.
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+PIDFile=/run/app_es.pid
+WorkingDirectory=/home/alex/work/sof_es6_pm
+ExecStart=/usr/bin/nodejs --experimental-modules /home/alex/work/sof_es6_pm/src/app_es6.mjs
+
+[Install]
+WantedBy=multi-user.target
